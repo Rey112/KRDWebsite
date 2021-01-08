@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: Arial;
+padding: 10px;
+background: #e2e2e2;
+}
+
+/* Header/Blog Title */
+.header {
+padding: 200px;
+text-align: center;
+background: white;
+}
+
+.header h1 {
+font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+float: left;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+
+/* Footer */
+.footer {
+padding: 20px;
+text-align: center;
+background: rgb(255, 255, 255);
+margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+width: 100%;
+padding: 0;
+}
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+.topnav a {
+float: none;
+width: 100%;
+}
+}
+
+/* way to ship product*/
+.shipping_title {
+    padding: 10px;
+    width: 70%;
+    text-align: left;
+    background: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.price{
+    float: right;
+    
+}
+
+.title_layout{
+    padding:10px;
+    width:70%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1px;
+}
+
+
+.tab{
+    text-indent: 5%;
+    color:rgb(167, 167, 167);
+    margin-top: 1%;
+   
+
+}
+
+.title_layout2{
+    padding:15px;
+    width:70%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+.text{
+    float: right;
+    margin: 0px;
+}
+
+
+
+.shopping_cart{
+margin-top: 1px;
+}
+
+
+.repostion{
+margin-left: 5%;
+}
+
+.shipping_price{
+  float: right;
+}
+
+.product_price{
+  font-weight: bold;
+  margin-right: 5%;
+  float: right;
+}
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+    <a href="#" style="float:right">Cart</a>
+    <a href="#" style="float:right">Contact</a>
+    <a href="#" style="float:right">About</a>
+    <a href="#"style="float:right">Customer Reviews</a>
+    <a href="#"style="float:right">Products</a>
+    <a href="#">KRDComputers</a>
+
+</div>
+
+
+
+<div class="shipping_title">
+  <h2>Shopping Cart</h2>
+</div>
+
+<div class="shopping_cart">
+  <table border="0" width="70%" style="background-color: rgb(255, 255, 255);">
+    <col style="width:2%">
+    <col style="width:20%">
+    <col style="width:50%">
+    <col style="width:8%;"
+    <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th><p class="product_price" style="text-decoration: underline;">Price</p></th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><input style="margin-top: 50%;" type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></th>
+        <td><img class="repostion" src="test.jpg" alt="Mountains" style="height: 8%;" ></td>
+        <td><p class="repostion">AMD-Ryzen 7 5800X 4th Gen 8-core Desktop Processor Without Cooler,
+          16-Threads Unlocked, 3.8 GHz Up to 4.7 GHz, Socket AM4, Zen 3 Core Architecture, StoreMI Technology
+           w/Mytrix Thermal Paste</p></td>
+        <td><price class="product_price">$9.99</price></td>
+      </tr>
+    <tr>
+      <th><input style="margin-top: 50%;" type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></th>
+      <td><img class="repostion" src="test.jpg" alt="Mountains" style="height: 8%;" ></td>
+      <td><p class="repostion">AMD-Ryzen 7 5800X 4th Gen 8-core Desktop Processor Without Cooler,
+        16-Threads Unlocked, 3.8 GHz Up to 4.7 GHz, Socket AM4, Zen 3 Core Architecture, StoreMI Technology
+         w/Mytrix Thermal Paste</p></td>
+      <td><price class="product_price">$9.99</price></td>
+    </tr>
+    <tr>
+      <th><input style="margin-top: 50%;" type="checkbox" id="vehicle1" name="vehicle1" value="Bike"></th>
+      <td><img class="repostion" src="test.jpg" alt="Mountains" style="height: 8%;" ></td>
+      <td><p class="repostion">AMD-Ryzen 7 5800X 4th Gen 8-core Desktop Processor Without Cooler,
+        16-Threads Unlocked, 3.8 GHz Up to 4.7 GHz, Socket AM4, Zen 3 Core Architecture, StoreMI Technology
+         w/Mytrix Thermal Paste</p></td>
+      <td><price class="product_price">$9.99</price></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td></td>
+      <td></td>
+      <td><p class="product_price" style="text-decoration: underline;">Subtotal: ($50)</p></p></td>
+    </tr>
+    </tbody>
+    </table>
+    
+  
+
+
+<div class="shipping_title">
+    <h2>Shipping Method</h2>
+</div>
+
+<div class="title_layout">
+    <form action="????????.php"> <!--need to add link, also need to link values/change them-->
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Option 1</label><price class="shipping_price">Free</price>
+        <br>
+            <p class="tab">- stuff about option 1 and how its amazing!</p>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Option 2</label><price class="shipping_price">9.99</price>
+        <br>
+            <p class="tab">- stuff about option 2 and how its amazing!</p>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> Option 3</label><price class="shipping_price">19.99</price>
+        <br>
+            <p class="tab">- stuff about option 3 and how its amazing!</p>
+      </form>
+      
+</div>
+
+<div class="title_layout2">
+    <h2>Customer Info</h2>  
+    <label for="email">Email:</label><br>
+    <label class="text">Shipping Address:</label><br>
+    <textbox>krdwebsite@gmail.com</textbox>
+    <textbox class="text">Jim Box</textbox><br>
+    <textbox class="text">34 New York St</textbox><br>
+    <textbox class="text">Floor 3</textbox><br>
+    <textbox class="text">San Francisco CA 94103</textbox><br>
+    <textbox class="text">USA</textbox><br>
+
+
+</div>
+
+
+
+
+<div class="title_layout2">
+    <h2>Payment Info</h2>
+    <label for="Payment">Payment:</label><br>
+    <label class="text">Billing Address:</label><br>
+    <textbox>PayPal</textbox>
+    <textbox class="text">Jim Box</textbox><br>
+    <textbox class="text">34 New York St</textbox><br>
+    <textbox class="text">Floor 3</textbox><br>
+    <textbox class="text">San Francisco CA 94103</textbox><br>
+    <textbox class="text">USA</textbox><br>
+
+</div>
+
+
+
+
+<div class="footer">
+<h2>Footer</h2>
+</div>
+
+
+
+
+
+</body>
+</html>
