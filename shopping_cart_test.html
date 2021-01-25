@@ -35,7 +35,7 @@ float: left;
 display: block;
 color: #f2f2f2;
 text-align: center;
-padding: 14px 16px;
+padding: 30px 16px;
 text-decoration: none;
 }
 
@@ -135,6 +135,65 @@ margin-left: 5%;
 
 
 
+.right_nav_order{
+  width: 29%;
+  float: right;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+.order_summary{
+    padding:15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1px;
+
+}
+.order_text{
+  font-size: 25px;
+  font-style: bold;
+}
+.button {
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #495049;
+}
+
+.button1:hover {
+  background-color: #2a2b2a;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+
+
+
+
 
 
 
@@ -152,6 +211,37 @@ margin-left: 5%;
     <a href="#">KRDComputers</a>
 
 </div>
+
+
+
+
+
+
+
+<script type="text/javascript">
+  var price = 123.99;
+</script>
+
+
+<!-- <input type="text" id="fname" name="fname" value="John"><br>   might be useful-->
+
+
+<div class="right_nav_order">
+  <h2>Order Summary</h2>
+  <div class="order_summary">
+    <label class="order_text" for="vehicle3"> Subtotal: </label><price class="shipping_price">$<script type="text/javascript">document.write(price)</script></price>
+    <br><br>
+    <label class="order_text" for="vehicle3"> Shipping: </label><price class="shipping_price">$<script type="text/javascript">document.write(price)</script></price>
+    <br><br>
+    <label class="order_text" for="vehicle3"> Total: </label><price class="shipping_price">$<script type="text/javascript">document.write(price)</script></price>
+    <br>
+  </div>
+  <button type="submit" value="Submit" class="button button1">Place Order </button>
+
+</div>
+
+
+
 
 
 
@@ -211,9 +301,7 @@ margin-left: 5%;
     
   
 
-
-
-
+             
 
 
 <div class="shipping_title">
