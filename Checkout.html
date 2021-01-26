@@ -1,39 +1,237 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <style>
-body {
-  font-family: Arial;
-  font-size: 17px;
-  padding: 8px;
+* {
+box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
+
+body {margin: 0;}
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(37, 37, 37);
+  position: -webkit-sticky; 
+  position: sticky;
+  top: 0;
 }
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: rgb(150, 150, 150);}
+
+ul.topnav li a.active {background-color: rgb(37, 37, 37);}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 800px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+
+
+body {
+font-family: Arial;
+background: #e2e2e2;
+}
+
+.body{
+  padding: 200px;
+}
+
+/* Footer */
+.footer {
+padding: 20px;
+text-align: center;
+background: rgb(255, 255, 255);
+margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+.leftcolumn, .rightcolumn {   
+width: 100%;
+padding: 0;
+}
+}
+
+
+
+/* way to ship product*/
+.shipping_title {
+    padding: 10px;
+    width: 70%;
+    text-align: left;
+    background: rgb(255, 255, 255);
+    margin-top: 20px;
+}
+
+.price{
+    float: right;
+    
+}
+
+.title_layout{
+    padding:10px;
+    width:70%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1px;
+}
+
+
+.tab{
+    text-indent: 5%;
+    color:rgb(167, 167, 167);
+    margin-top: 1%;
+   
+
+}
+
+.title_layout2{
+    padding:15px;
+    width:70%;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
+}
+.text{
+    float: right;
+    margin: 0px;
+}
+
+
+
+.shopping_cart{
+margin-top: 1px;
+}
+
+
+.repostion{
+margin-left: 5%;
+}
+
+.shipping_price{
+  float: right;
+}
+
+.product_price{
+  font-weight: bold;
+  margin-right: 5%;
+  float: right;
+}
+
+
+
+.right_nav_order{
+  width: 29%;
+  float: right;
+  padding: 15px;
+  background-color: rgb(255, 255, 255);
+  margin-top: 20px;
+}
+
+.order_summary{
+    padding:15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 1px;
+
+}
+.order_text{
+  font-size: 25px;
+  font-style: bold;
+}
+.button {
+  width: 100%;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #495049;
+}
+
+.button1:hover {
+  background-color: #2a2b2a;
+  color: white;
+}
+
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+
+.sticky {
+  position: sticky;
+  top: 0;
+  background-color: rgb(255, 255, 255);
+  padding: 50px;
+  font-size: 20px;
+  bottom: 1rem;
+ 
+}
+
+
+.links{
+  margin-top: 10%;
+  font-size: 18px;
+  color: rgb(97, 97, 97);
+
+}
+
+.blank_text{
+  color: #ffffff;
+  font-size: 12.25px;
+}
+
+
+
 
 .row {
-  display: -ms-flexbox; /* IE10 */
   display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
-  margin: 0 -16px;
+  flex-wrap: 70%;
+  margin: 0 0px;
 }
 
 .col-25 {
-  -ms-flex: 25%; /* IE10 */
   flex: 25%;
 }
 
 .col-50 {
-  -ms-flex: 50%; /* IE10 */
   flex: 50%;
 }
 
 .col-75 {
-  -ms-flex: 75%; /* IE10 */
   flex: 75%;
 }
 
@@ -44,10 +242,13 @@ body {
 }
 
 .container {
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
   border-radius: 3px;
+  width: 70%;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 
 input[type=text] {
@@ -58,32 +259,15 @@ input[type=text] {
   border-radius: 3px;
 }
 
-label {
-  margin-bottom: 10px;
-  display: block;
-}
+
 
 .icon-container {
-  margin-bottom: 20px;
+  margin-bottom: 47px;
   padding: 7px 0;
   font-size: 24px;
 }
 
-.btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px;
-  margin: 10px 0;
-  border: none;
-  width: 100%;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 17px;
-}
 
-.btn:hover {
-  background-color: #45a049;
-}
 
 a {
   color: #2196F3;
@@ -107,12 +291,154 @@ span.price {
     margin-bottom: 20px;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </style>
+
+<header>
+  <ul class="topnav sticky">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#news">News</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li class="right"><a href="#about">About</a></li>
+  </ul>
+
+</header>
 </head>
 <body>
 
-<h2>Responsive Checkout Form</h2>
-<p>Resize the browser window to see the effect. When the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other.</p>
+
+
+
+
+<script type="text/javascript">
+  var price = 299.99;
+</script>
+
+
+<!-- <input type="text" id="fname" name="fname" value="John"><br>   might be useful-->
+
+
+
+
+
+
+
+
+<div class="right_nav_order sticky">
+  <h2>Order Summary</h2>
+  <div class="order_summary">
+    <label class="order_text" for="vehicle4"> Subtotal: </label><price class="shipping_price">$<script type="text/javascript">document.write(price)</script></price>
+    <br><br>
+    <label class="order_text" for="vehicle4"> Shipping: </label><price class="shipping_price">$<script type="text/javascript">document.write(price)</script></price>
+    <br><br>
+    <label class="order_text" for="vehicle4"> Total: </label><price class="shipping_price">$<script type="text/javascript">document.write(price)</script></price>
+    <br>
+  </div>
+  <button type="submit" value="Submit" class="button button1">Place Order </button>
+
+</div>
+
+
+
+
+
+
+
+<div class="shipping_title">
+  <h2>Shopping Cart</h2>
+</div>
+
+<div class="shopping_cart">
+  <table border="0" width="70%" style="background-color: rgb(255, 255, 255);">
+    <col style="width:2%">
+    <col style="width:20%">
+    <col style="width:50%">
+    <col style="width:8%;"
+    <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th><p class="product_price" style="text-decoration: underline;">Price</p></th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th><input type="checkbox" checked="checked" name="sameadr"></th>
+        <td><img class="repostion" src="test.jpg" alt="Mountains" style="height: 8%;" ></td>
+        <td><p class="repostion">AMD-Ryzen 7 5800X 4th Gen 8-core Desktop Processor Without Cooler,
+          16-Threads Unlocked, 3.8 GHz Up to 4.7 GHz, Socket AM4, Zen 3 Core Architecture, StoreMI Technology
+           w/Mytrix Thermal Paste</p></td>
+        <td><price class="product_price">$9.99</price></td>
+      </tr>
+    <tr>
+      <th><input type="checkbox" checked="checked" name="sameadr"></th>
+      <td><img class="repostion" src="test.jpg" alt="Mountains" style="height: 8%;" ></td>
+      <td><p class="repostion">AMD-Ryzen 7 5800X 4th Gen 8-core Desktop Processor Without Cooler,
+        16-Threads Unlocked, 3.8 GHz Up to 4.7 GHz, Socket AM4, Zen 3 Core Architecture, StoreMI Technology
+         w/Mytrix Thermal Paste</p></td>
+      <td><price class="product_price">$9.99</price></td>
+    </tr>
+    <tr>
+      <th><input type="checkbox" checked="checked" name="sameadr"></th>
+      <td><img class="repostion" src="test.jpg" alt="Mountains" style="height: 8%;" ></td>
+      <td><p class="repostion">AMD-Ryzen 7 5800X 4th Gen 8-core Desktop Processor Without Cooler,
+        16-Threads Unlocked, 3.8 GHz Up to 4.7 GHz, Socket AM4, Zen 3 Core Architecture, StoreMI Technology
+         w/Mytrix Thermal Paste</p></td>
+      <td><price class="product_price">$9.99</price></td>
+    </tr>
+    <tr>
+      <th></th>
+      <td></td>
+      <td></td>
+      <td><p class="product_price" style="text-decoration: underline;">Subtotal: ($50)</p></p></td>
+    </tr>
+    </tbody>
+    </table>
+    
+  
+
+             
+
+
+<div class="shipping_title">
+    <h2>Shipping Method</h2>
+</div>
+
+<div class="title_layout">
+    <form action="????????.php"> <!--need to add link, also need to link values/change them-->
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> Option 1</label><price class="shipping_price">Free</price>
+        <br>
+            <p class="tab">- stuff about option 1 and how its amazing!</p>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> Option 2</label><price class="shipping_price">9.99</price>
+        <br>
+          <p class="tab">- stuff about option 1 and how its amazing!</p>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Car">
+        <label for="vehicle3"> Option 3</label><price class="shipping_price">19.99</price>
+        <br>
+            <p class="tab">- stuff about option 3 and how its amazing!</p>
+      </form>
+      
+</div>
+
+
 <div class="row">
   <div class="col-75">
     <div class="container">
@@ -173,22 +499,169 @@ span.price {
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <input type="submit" value="Purchase" class="btn">
       </form>
     </div>
   </div>
-  <div class="col-25">
-    <div class="container">
-      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-      <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-      <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-      <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-      <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-      <hr>
-      <p>Total <span class="price" style="color:black"><b>$30</b></span></p>
-    </div>
-  </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="shopping_cart">
+  <table border="0" width="100%" style="background-color: rgb(255, 255, 255);">
+    <col style="width:1%">
+    <col style="width:10%">
+    <col style="width:10%">
+    <col style="width:10%">
+    <col style="width:10%">
+    <col style="width:10%">
+    <col style="width:10%">
+    <col style="width:10%">
+    <thead>
+
+      <!--  first row   -->
+    <tr>
+      <th></th>
+      <th><h2>KRD Website</h2></th>
+      <th></th>
+      <th><h2>Menu</h2></th>
+      <th><h2>Categories</h2></th>
+      <th><h2>Help</h2></th>
+      <th><h2>Follow Us!</h2></th>
+    </tr>
+
+    </thead>
+    <tbody>
+       <!--  second row   -->
+      <tr>
+        <th></th>
+        <td></td>
+        <td></td>
+        <th><a class="links" href="#home">Home</a></th>
+        <th><a class="links" href="#home">Build Your Own PC</a></th>
+        <th><a class="links" href="#home">Shipping</a></th>
+        <th><a class="links" href="#home">Instagram</a></th>
+        
+      </tr>
+
+       <!--  third row   -->
+       <tr>
+        <th></th>
+        <td><p class="blank_text">Text</p></td>
+        <td></td>
+        <th><a class="links" href="#home"></a></th>
+        <th><a class="links" href="#home"></a></th>
+        <td></td>
+        <td></td>
+      </tr>
+
+     <!--  fourth row   -->
+     <tr>
+      <th></th>
+      <td><p class="blank_text">Text</p></td>
+      <td></td>
+      <th><a class="links" href="#home">About</a></th>
+      <th><a class="links" href="#home">Creator PC</a></th>
+      <th><a class="links" href="#home">Returns and Exchange</a></th>
+      <th><a class="links" href="#home">Youtube</a></th>
+    </tr>
+
+     <!--  fifth row   -->
+     <tr>
+      <th></th>
+      <td><p class="blank_text">Text</p></td>
+      <td></td>
+      <th><a class="links" href="#home"></a></th>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+
+     <!--  sixth row   -->
+     <tr>
+      <th></th>
+      <td><p class="blank_text">Text</p></td>
+      <td></td>
+      <th><a class="links" href="#home">Products</a></th>
+      <th><a class="links" href="#home">Gaming PC</a></th>
+      <th><a class="links" href="#home">Product Care</a></th>
+      <th><a class="links" href="#home">Twitter</a></th>
+    </tr> 
+
+       <!--  seventh row   -->
+       <tr>
+        <th></th>
+        <td><p class="blank_text">Text</p></td>
+        <td></td>
+        <th><a class="links" href="#home"></a></th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><p class="blank_text">Text</p></td>
+        <td></td>
+        <th><a class="links" href="#home">Blog</a></th>
+        <th><a class="links" href="#home">Office PC</a></th>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td><p class="blank_text">Text</p></td>
+        <td></td>
+        <th><a class="links" href="#home"></a></th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th></th>
+        <td></td>
+        <td></td>
+        <th><a class="links" href="#home">Styleguide</a></th>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th></th>
+        <td></td>
+        <td></td>
+        <th><a class="links" href="#home"></a></th>
+        <td></td>
+        <td><p class="blank_text">Text</p></td>
+        <td></td>
+      </tr>
+
+      <tr>
+        <th></th>
+        <td></td>
+        <td></td>
+        <th><a class="links" href="#home"></a></th>
+        <td></td>
+        <td><p class="blank_text">Text</p></td>
+        <td></td>
+      </tr>
+
+
+      
+    </tbody>
+    </table>
+    
+
+
+
 
 </body>
 </html>
