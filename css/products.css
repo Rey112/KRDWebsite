@@ -1,0 +1,621 @@
+* {
+  box-sizing: border-box;
+  }
+  
+     
+  body {
+    margin: 0;
+    font-family: Arial;
+    background: #e2e2e2;
+    min-height: 100%;
+    }
+  
+  ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(37, 37, 37);
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li a:hover:not(.active) {background-color: rgb(150, 150, 150);}
+  
+  ul.topnav li a.active {background-color: rgb(37, 37, 37);}
+  
+  ul.topnav li.right {float: right;}
+  
+  @media screen and (max-width: 800px) {
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+  }
+  
+  .collection-item {
+    position: relative;
+    width: 33.33%;
+    margin-bottom: 30px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  element.style {
+    background-image: url(https://uploads-ssl.webflow.com/5f5aeaf…/5f63b7e…_20200906_182857.jpg);
+}
+
+  .product-image-wrap {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 620px;
+    background-color: #f4f4f4;
+    background-image: url(https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg);
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: opacity 600ms ease;
+    transition: opacity 600ms ease;
+    color: #fff;
+}
+
+.w-inline-block {
+  max-width: 100%;
+  display: inline-block;
+}
+  .collection-item-2 {
+    padding-bottom: 0px;
+    display: inline;
+    margin: 10px;
+  }
+
+  .collection-wrap {
+    display: flex;
+    margin-right: -15px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+
+  .w-col-3 {
+    width: 25%;
+  }
+
+  .w-col {
+    position: relative;
+    float: left;
+    width: 100%;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+ 
+  
+  .body{
+    padding: 200px;
+  }
+ 
+  .section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  /* Footer */
+  .footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(160, 42, 42);
+  margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+  width: 100%;
+  padding: 0;
+  }
+  }
+  
+  
+  
+  /* way to ship product*/
+  .shipping_title {
+      padding: 10px;
+      width: 70%;
+      text-align: left;
+      background: rgb(255, 255, 255);
+      margin-top: 20px;
+  }
+  
+  .price{
+      float: right;
+      
+  }
+  
+  .title_layout{
+      padding:10px;
+      width:70%;
+      background-color: rgb(255, 255, 255);
+      margin-top: 1px;
+  }
+  
+  
+  .tab{
+      text-indent: 5%;
+      color:rgb(167, 167, 167);
+      margin-top: 1%;
+     
+  
+  }
+  
+  .title_layout2{
+      padding:15px;
+      width:70%;
+      background-color: rgb(255, 255, 255);
+      margin-bottom: 20px;
+      margin-top: 20px;
+      
+  }
+  .text{
+      float: right;
+      margin: 0px;
+  }
+  
+  
+  .shopping_cart{
+  margin-top: 1px;
+  }
+  
+  
+  .repostion{
+  margin-left: 5%;
+  }
+  
+  .shipping_price{
+    float: right;
+  }
+  
+  .product_price{
+    font-weight: bold;
+    margin-right: 5%;
+    float: right;
+  }
+  
+  
+  
+  .right_nav_order{
+    width: 29%;
+    float: right;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+  }
+  
+  .order_summary{
+      padding:15px;
+      background-color: rgb(255, 255, 255);
+      margin-top: 1px;
+  
+  }
+  .order_text{
+    font-size: 25px;
+    font-style: bold;
+  }
+  .button {
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #495049;
+  }
+  
+  .button1:hover {
+    background-color: #2a2b2a;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    font-size: 20px;
+    bottom: 1rem;
+   
+  }
+  
+  
+  .links{
+    margin-top: 10%;
+    font-size: 18px;
+    color: rgb(97, 97, 97);
+  
+  }
+  
+  .blank_text{
+    color: #ffffff;
+    font-size: 12.25px;
+  }
+  
+  
+  
+  
+  .row {
+    display: flex;
+    flex-wrap: 70%;
+    margin: 0 0px;
+  }
+  
+  .col-25 {
+    flex: 25%;
+  }
+  
+  .col-50 {
+    flex: 50%;
+  }
+  
+  .col-75 {
+    flex: 75%;
+  }
+  
+  .col-25,
+  .col-50,
+  .col-75 {
+    padding: 0 16px;
+  }
+  
+  .container {
+    background-color: #ffffff;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 100%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  
+  input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  
+  
+  .icon-container {
+    margin-bottom: 47px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+  
+  
+  
+  a {
+    color: #2196F3;
+  }
+  
+  hr {
+    border: 1px solid lightgrey;
+  }
+  
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+  /* Footer */
+  .footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(255, 255, 255);
+  margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+  width: 100%;
+  padding: 0;
+  }
+  }
+  
+  
+  
+  /* way to ship product*/
+  .shipping_title {
+      padding: 10px;
+      width: 70%;
+      text-align: left;
+      background: rgb(255, 255, 255);
+      margin-top: 20px;
+  }
+  
+  .price{
+      float: right;
+      
+  }
+  
+  .title_layout{
+      padding:10px;
+      width:70%;
+      background-color: rgb(255, 255, 255);
+      margin-top: 1px;
+  }
+  
+  
+  .tab{
+      text-indent: 5%;
+      color:rgb(167, 167, 167);
+      margin-top: 1%;
+     
+  
+  }
+  
+  .title_layout2{
+      padding:15px;
+      width:70%;
+      background-color: rgb(255, 255, 255);
+      margin-bottom: 20px;
+      margin-top: 20px;
+      
+  }
+  .text{
+      float: right;
+      margin: 0px;
+  }
+  
+  
+  
+  .shopping_cart{
+  margin-top: 1px;
+  }
+  
+  
+  .repostion{
+  margin-left: 5%;
+  }
+  
+  .shipping_price{
+    float: right;
+  }
+  
+  .product_price{
+    font-weight: bold;
+    margin-right: 5%;
+    float: right;
+  }
+  
+  
+  
+  .right_nav_order{
+    width: 29%;
+    float: right;
+    padding: 15px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+  }
+  
+  .order_summary{
+      padding:15px;
+      background-color: rgb(255, 255, 255);
+      margin-top: 1px;
+  
+  }
+  .order_text{
+    font-size: 25px;
+    font-style: bold;
+  }
+  .button {
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #495049;
+  }
+  
+  .button1:hover {
+    background-color: #2a2b2a;
+    color: white;
+  }
+  
+  .button2 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid #008CBA;
+  }
+  
+  .button2:hover {
+    background-color: #008CBA;
+    color: white;
+  }
+  
+  
+  .sticky {
+    position: sticky;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    font-size: 20px;
+    bottom: 1rem;
+   
+  }
+  
+  
+  .links{
+    margin-top: 10%;
+    font-size: 18px;
+    color: rgb(97, 97, 97);
+  
+  }
+  
+  .blank_text{
+    color: #ffffff;
+    font-size: 12.25px;
+  }
